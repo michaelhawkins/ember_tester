@@ -1,4 +1,4 @@
-class PostsController < ApplicationController
+class Api::V1::PostsController < ApplicationController
   respond_to :json
 
   def index
@@ -8,5 +8,4 @@ class PostsController < ApplicationController
   def show
     respond_with Post.find(params[:id])
   end
-end 
 end
