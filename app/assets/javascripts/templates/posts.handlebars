@@ -1,0 +1,14 @@
+/**
+ * @author Michael Hawkins
+ */
+<h1>Posts</h1>
+
+<ul>
+	{{#each controller}}
+		<li>{{#linkTo "post" this}}{{title}}{{/linkTo}}</li>
+	{{else}}
+		<li>There are no posts.</li>
+	{{/each}}
+</ul>
+
+{{outlet}}
